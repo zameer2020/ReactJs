@@ -4,44 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>React</title>
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="./index.css
+     ">
 </head>
 <body>
-
-<!-- Using html-->
-    <div id="root">
-        <h1>Hello World using Html</h1>
-    </div>
+    <div id="container">Header</div>
+<div id="root">not rendered
+    <h1>Namaste HTML</h1>
+</div>
+<div>footer</div>
 </body>
+<script src="./index.js">
 
 
+</script>
 <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-
 <script>
-    /*Iam from Reactjs*/
+    const head=React.createElement('h1',{},"Namaste React");
+    const head1=React.createElement('h1',{},"Namaste React");
+    const head2=React.createElement('h2',{},"Namaste React");
+    const head3=React.createElement('h3',{},"Namaste React");
+    const content=React.createElement('div',{id:"container",
+    
+    style:{backgroundcolor:"yellow",color:"blue"}},[head,head1,head2,head3])
 
-    const heading1=React.createElement("h1",{},"Iam from Reactjs");
-    const heading2=React.createElement("h1",{},"Iam from Reactjs-heading 2");
-    const heading3=React.createElement("h1",{},"Iam from Reactjs-heading 3");
-    const root=ReactDOM.createRoot(document.getElementById('root'));
-
-    root.render([heading2,heading3]);
-
-
+    const root1=ReactDOM.createRoot(document.getElementById('root'));
+    root1.render(content)
 
 </script>
 
 
-<script>
-
-    /* Iam from Javascript */
-    let heading=document.createElement('h1');
-    heading.innerHTML="Iam from javascript"
-
-    const root=document.getElementById('root');
-root.appendChild(heading);
 
 
-</script>
 </html>
